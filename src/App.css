@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "GmarketBold";
+  src: url(../src/assets/font/GmarketSansTTFBold.ttf);
+}
+
+@font-face {
+  font-family: "GmarketMedium";
+  src: url(../src/assets/font/GmarketSansTTFMedium.ttf);
+}
+
+@font-face {
+  font-family: "GmarketLight";
+  src: url(../src/assets/font/GmarketSansTTFLight.ttf);
+}
+
+.Main {
+  width: 100%;
+  display: block;
+}
+
+.Page01 {
+  
+  /* border: 2px solid red;
+  background-color: red; */
+}
+

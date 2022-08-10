@@ -1,0 +1,52 @@
+.Page01 {
+    display: flex;
+    /* align-content: center; */
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 2px solid red; */
+
+
+    /* justify-items: center; */
+}
+
+.img01 {
+    max-width: 1200px;
+    height: 884px;
+    margin-top: 0;
+}
+
+.background {
+    
+    width: 100%;
+    height: 717px;
+    
+    background-color: #ffef6b;
+}
+
+.area01 {  
+    position: relative;
+
+}
+
+.text01-1 {
+    display: block;
+    position: absolute;
+    font-family: "Gmarketmedium";
+    font-size: 49px;
+    width: 400px;
+    height: 137px;
+    margin-left: -650px;
+    margin-top: 150px;
+    line-height: 68px;
+}
+
+
+.text01-2 {
+    display: block;
+    position: absolute;
+    font-family: "Gmarketlight";
+    font-size: 16px;
+    width: 400px;
+    height: 62px;
+    line-height: 30px;
+}
