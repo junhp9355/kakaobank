@@ -5,9 +5,11 @@ import TopLogo from './components/TopLogo';
 
 const App = () => {
   return (
-    <section className='Main'>
-      <TopLogo />
-      <Page01 classname="Page01" />
+    <section className='container'>
+      <div classname="Main">
+        <TopLogo />
+        <Page01 classname="Page" />
+      </div>
     </section>
 
   );

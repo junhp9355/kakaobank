@@ -5,63 +5,29 @@ body, ul, li, a {
     text-decoration: none;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-}
 
 .TopLogo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     height: 81px;
     width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    /* background-color: red; */
+
 }
 
 .con {
-    display: flex;
-    margin: auto;
-    /* padding: auto; */
-    width: 1080px;
+    
+    width: 400px;
     height: 100%;
-    /* background-color: red; */
-    align-items: center;
-    justify-content: space-between;
+    /* background-color: green; */
+
 }
 
-.menu-1 {
-    display: flex;
-    margin-right: 10px;
-    height: 80px;
-    /* border: 2px solid blue; */
-}
-
-ul>li a {
-    color:black;
-    font-size: 15px;
-    height: 100%;
-    margin: 0 5px;
-    /* border: 2px solid red; */
-    /* background-color: red; */
-}
-
-ul>li {
-    /* background-color: red; */
-}
-
-ul>li>a {
-    display: flex;
-    padding: 3px 20px;
-    /* background-color: red; */
-    font-family: "Gmarketmedium";
-    letter-spacing: -1px;
-    align-items: center;
-}
-
-.menu-1-1>a {
-    display: flex;
-    background-color:#fede22;
-    border-radius: 50px;
-    margin-top: 18px;
-    margin-left: 10px;
-    height: 40px;
-    font-size: 15px;
+.Logo {
+    /* background-color: blue; */
+    margin-left: 208px;
+    padding: 10px;
+    margin-top: 20px;
 }

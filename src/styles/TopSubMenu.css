@@ -1,0 +1,41 @@
+.TopSubMenu {
+    display: flex;
+    width: 900px;
+    /* background-color: green; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px;
+}
+
+
+.menu-1 {
+    height: 20px;
+    width: 900px;
+    /* background-color: blue; */
+}
+
+.menu-1 > li {
+    display: inline-block;
+}
+
+.first-menu {
+    color:black;
+    font-size: 15px;
+    padding: 40px 10px;
+    margin: 0 10px;
+    font-family: "Gmarketmedium";
+    position: relative;
+
+}
+
+
+
+
+.menu-1-1 > .first-menu {
+    background-color:#fede22;
+    padding: 15px 15px;
+    border-radius: 50px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: "Gmarketmedium";
+}
