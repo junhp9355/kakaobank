@@ -1,0 +1,31 @@
+.SecondMenu03 {
+  position: absolute;
+  margin-top: 29px;
+  width: 100vw;
+  height: 470px;
+  left: 0;
+  text-align: center;
+  background-color: white;
+  z-index: 999;
+}
+
+.SecondMenu03 > ul {
+  display: inline-block;
+  margin: 40px 100px;
+  margin-left: 0;
+  vertical-align: top;
+  line-height: 45px;
+}
+
+.second-title {
+  font-family: "GmarketMedium";
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+.second-sub-title {
+  font-family: "GmarketMedium";
+  font-size: 14px;
+  color: black;
+}

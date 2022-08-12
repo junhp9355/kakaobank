@@ -1,17 +1,19 @@
-import React from 'react';
-import '../src/App.css';
-import Page01 from './components/Page01';
-import TopLogo from './components/TopLogo';
+import React from "react";
+import "../src/App.css";
+import Page01 from "./components/Page01";
+import TopLogo from "./components/TopLogo";
+import "../src/styles/TopSubMenu.css";
 
 const App = () => {
   return (
-    <section className='container'>
+    <section className="container">
       <div classname="Main">
-        <TopLogo />
-        <Page01 classname="Page" />
+        <TopLogo className="TopLogoMenu" />
+        <div>
+          <Page01 classname="Page01Main" />
+        </div>
       </div>
     </section>
-
   );
 };
 
