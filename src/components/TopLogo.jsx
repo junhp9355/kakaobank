@@ -5,14 +5,16 @@ import TopSubMenu from "./TopSubMenu";
 
 const TopLogo = () => {
   return (
-    <div className="TopLogo">
-      <nav className="con">
-        <a href="#!">
-          <Logotop className="Logo" />
-        </a>
-      </nav>
-      <TopSubMenu />
-    </div>
+    <header className="header">
+      <div className="TopLogo">
+        <nav className="con">
+          <a href="#!">
+            <Logotop className="Logo" />
+          </a>
+        </nav>
+        <TopSubMenu />
+      </div>
+    </header>
   );
 };
 

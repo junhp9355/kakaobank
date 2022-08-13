@@ -19,16 +19,13 @@
 }
 
 .Main {
+  position: relative;
   width: 100vw;
   display: block;
 }
 
-/* .TopLogoMenu {
-  position: relative;
-  z-index: 10;
+.space {
+  width: 100vw;
+  height: 32px;
+  background-color: #fafafa;
 }
-
-.Page01Main {
-  position: relative;
-  z-index: 8;
-} */

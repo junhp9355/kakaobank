@@ -8,12 +8,20 @@ a {
   text-decoration: none;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
 .TopLogo {
   display: flex;
   justify-content: center;
   align-content: center;
   height: 81px;
   width: 100vw;
+  background-color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
