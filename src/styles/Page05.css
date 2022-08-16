@@ -1,0 +1,74 @@
+.Page05 {
+  width: 100vw;
+  height: 650px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Page05fixed {
+  width: 1300px;
+  height: 100%;
+  position: absolute;
+  /* background-color: blue; */
+}
+
+.Pg05bg {
+  position: absolute;
+  width: 492px;
+  height: 408px;
+  left: 115%;
+  top: 19.5%;
+}
+
+.Pg05textMain {
+  position: absolute;
+  /* background-color: yellow; */
+  height: 100%;
+  left: 40%;
+  top: 22%;
+}
+
+.Pg05body {
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  /* background-color: red; */
+  font-family: "GmarketLight";
+}
+
+.Pg05text01 {
+  font-family: "GmarketMedium";
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.Pg05text02 {
+  font-size: 15px;
+  margin-top: -10px;
+  line-height: 25px;
+}
+
+.Pg05benner {
+  position: absolute;
+  background-color: #f6f6f6;
+  font-weight: 600;
+  color: inherit;
+  font-size: 16px;
+  padding: 20px 110px 17px 90px;
+  border-radius: 10px;
+  top: 39%;
+}
+
+.Pg05benner:hover {
+  text-decoration: underline;
+}
+
+.Pg05bankbookIcon {
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  top: 42.8%;
+  left: 50%;
+}

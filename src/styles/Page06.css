@@ -1,0 +1,87 @@
+.Page06 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 750px;
+  background-image: url(/public/img/home_map.png);
+  background-repeat: no-repeat;
+  background-position-x: -11%;
+  background-position-y: 50%;
+}
+
+.Page06fixed {
+  position: absolute;
+  width: 1300px;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.Pg06body {
+  position: absolute;
+  height: 100%;
+  /* background-color: blue; */
+  font-family: "GmarketLight";
+  left: 57%;
+  top: 22%;
+}
+
+.Pg06text01 {
+  font-family: "GmarketMedium";
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1px;
+}
+
+.Pg06text02 {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: -15px;
+  line-height: 25px;
+}
+
+.Pg06banner {
+  position: absolute;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  color: inherit;
+  font-weight: 600;
+  top: 44%;
+  padding: 20px 110px 17px 95px;
+}
+
+.Pg06banner:hover {
+  text-decoration: underline;
+}
+
+.Pg06bankbookIcon {
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  top: 47.2%;
+  left: 47%;
+}
+
+.Pg06bg {
+  position: absolute;
+  width: 408px;
+  height: 715px;
+  top: 3%;
+  left: 15%;
+  animation: moveToUP 1.4s;
+  animation-delay: 1.5s;
+}
+
+@keyframes moveToUP {
+  to {
+    transform: translatetY(0px);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.8, 0.2, 0.1, 1);
+  }
+}

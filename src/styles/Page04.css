@@ -1,0 +1,74 @@
+.Page04 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 750px;
+  position: relative;
+}
+
+.Page04fixed {
+  position: absolute;
+  /* background-color: blue; */
+  width: 1300px;
+  height: 100%;
+}
+
+.Pg04bg {
+  position: absolute;
+  width: 459px;
+  height: 607px;
+  left: 13%;
+  top: 11%;
+}
+
+.Pg04textMain {
+  position: absolute;
+  left: 57%;
+  top: 23%;
+  width: 500px;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.Pg04text01 {
+  font-family: "GamrketMedium";
+  position: absolute;
+}
+
+.Pg04text02 {
+  font-family: "GmarketLight";
+  position: absolute;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.Pg04bannerMain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  top: 37%;
+}
+
+.Pg04banner {
+  /* text-align: center; */
+  padding: 20px 110px 16px 92px;
+  background-color: #f6f6f6f6;
+  position: absolute;
+  border-radius: 10px;
+  font-family: "GmarketLight";
+  font-weight: 600;
+}
+
+.Pg04banner:hover {
+  text-decoration: underline;
+}
+
+.Pg04bankbookIcon {
+  position: absolute;
+  left: 32%;
+  top: 3.2%;
+  width: 6px;
+  height: 9px;
+}
