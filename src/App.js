@@ -37,9 +37,11 @@ const App = () => {
         <div>
           <Page06 classname="Page06Main" />
         </div>
-        <div className="space"></div>
         <div>
           <Page07 classname="Page07Main" />
+        </div>
+        <div>
+          <Page01 classname="Page01Main" />
         </div>
       </div>
     </section>
