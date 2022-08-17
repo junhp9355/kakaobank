@@ -19,11 +19,11 @@
   height: 722px;
   left: 60%;
   top: 2%;
-  animation: moveToRight 1.4s;
-  animation-delay: 1.5s;
+  /* animation: moveToRight 1.4s;
+  animation-delay: 1.5s; */
 }
 
-@keyframes moveToRight {
+/* @keyframes moveToRight {
   to {
     transform: translateX(0px);
     opacity: 1;
@@ -33,7 +33,7 @@
     opacity: 0;
     animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
   }
-}
+} */
 
 .Page03SubBg {
   position: absolute;

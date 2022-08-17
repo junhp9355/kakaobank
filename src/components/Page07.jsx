@@ -1,14 +1,19 @@
 import React from "react";
 import "../styles/Page07.css";
+import Scroll_pg07 from "./Scroll_pg07";
 
 const Page07 = () => {
+  const animatedItem = {
+    1: Scroll_pg07('up', 1.2, 0),
+    2: Scroll_pg07('diagonal', 1.4, 0.5)
+  }
   return (
     <section className="Page07">
       <section className="Page07background"></section>
-      <section className="Page07bgchnage"></section>
+      <section {...animatedItem[1]} className="Page07bgchnage"></section>
       <section className="SUNfixed">
         <section className="SunMoon"></section>
-        <section className="SunMoonshadow"></section>
+        <section {...animatedItem[2]} className="SunMoonshadow"/>
       </section>
       <section className="StarMain">
         <div className="Star01" />

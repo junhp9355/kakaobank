@@ -5,6 +5,7 @@
   position: relative;
   width: 100vw;
   height: 930px;
+  overflow: hidden;
 }
 
 .Page07background {
@@ -19,12 +20,12 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: bgChange 1.4s;
-  /* animation-delay: 1.5s; */
+  /* animation: bgChange 1.4s;
+  animation-delay: 1.5s; */
   background-color: #333b58;
   animation-fill-mode: forwards;
 }
-@keyframes bgChange {
+/* @keyframes bgChange {
   100% {
     transform: translatetY(0px);
   }
@@ -32,7 +33,7 @@
     transform: translateY(930px);
     animation-timing-function: cubic-bezier(0.8, 0.2, 0.1, 1);
   }
-}
+} */
 
 .SUNfixed {
   position: absolute;
@@ -64,19 +65,19 @@
 }
 
 .SunMoonshadow {
-  background-color: none;
+  background-color: red;
   width: 132px;
   height: 132px;
   position: absolute;
   border-radius: 50%;
-  top: 100px;
-  left: 1300px;
-  animation: SUNMOONshadow 1s;
-  animation-delay: 0.85s;
+  top: 170px;
+  left: 1370px;
+  /* animation: SUNMOONshadow 1s;
+  animation-delay: 0.85s; */
   animation-fill-mode: forwards;
 }
 
-@keyframes SUNMOONshadow {
+/* @keyframes SUNMOONshadow {
   100% {
     top: 170px;
     left: 1370px;
@@ -91,7 +92,7 @@
     left: 1300px;
     animation-timing-function: ease;
   }
-}
+} */
 
 .Page07fixed {
   width: 1300px;

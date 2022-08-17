@@ -1,12 +1,16 @@
 import React from "react";
 import "../styles/Page03.css";
+import Scroll from './Scroll';
 
 const Page03 = () => {
+    const animatedItem = {
+      1: Scroll('left', 1.4, 0.1),
+    };
   return (
     <section className="Page03">
       <nav className="Page03fixed">
         <div>
-          <img className="Page03bg" src="img/main-savings.png" alt="Page03bg" />
+          <img {...animatedItem[1]} className="Page03bg" src="img/main-savings.png" alt="Page03bg" />
         </div>
         <div>
           <img

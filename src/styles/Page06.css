@@ -70,11 +70,11 @@
   height: 715px;
   top: 3%;
   left: 15%;
-  animation: moveToUP 1.4s;
-  animation-delay: 1.5s;
+  /* animation: moveToUP 1.4s;
+  animation-delay: 1.5s; */
 }
 
-@keyframes moveToUP {
+/* @keyframes moveToUP {
   to {
     transform: translatetY(0px);
     opacity: 1;
@@ -84,4 +84,4 @@
     opacity: 0;
     animation-timing-function: cubic-bezier(0.8, 0.2, 0.1, 1);
   }
-}
+} */

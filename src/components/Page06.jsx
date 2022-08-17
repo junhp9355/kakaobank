@@ -1,10 +1,21 @@
 import React from "react";
 import "../styles/Page06.css";
+import Scroll from './Scroll';
 
 const Page06 = () => {
+  const animatedItem = {
+    1: Scroll('up', 1.4, 0.1),
+  };
   return (
     <section className="Page06">
       <nav className="Page06fixed">
+        <div>
+          <img {...animatedItem[1]}
+            className="Pg06bg"
+            src="img/main-foreignRemittance-new.png"
+            alt="Pg06bg"
+          />
+        </div>
         <div className="Pg06body">
           <p className="Pg06text01">
             해외계좌송금과
@@ -28,13 +39,7 @@ const Page06 = () => {
             alt="Pg06bankbook"
           />
         </div>
-        <div>
-          <img
-            className="Pg06bg"
-            src="img/main-foreignRemittance-new.png"
-            alt="Pg06bg"
-          />
-        </div>
+        
       </nav>
     </section>
   );
