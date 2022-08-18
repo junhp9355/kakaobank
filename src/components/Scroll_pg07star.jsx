@@ -15,6 +15,8 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
         return "translate3d(-50%, 0, 0)";
       case "diagonal":
         return "translate3d(-50%, -50%, 0)";
+      case "fadeIn":
+        return "translate3d(0, 0, 100%)";
       default:
         return;
     }
@@ -24,6 +26,7 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
     ([entry]) => {
       const { current } = element;
       if (entry.isIntersecting) {
+        // current.style.animation = "infinite";
         current.style.transitionProperty = "all";
         current.style.transitionDuration = `${duration}s`;
         current.style.transitionTimingFunction = "ease";
@@ -41,7 +44,7 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
     const { current } = element;
 
     if (current) {
-      observer = new IntersectionObserver(handleScroll, { threshold: 1 });
+      observer = new IntersectionObserver(handleScroll, { threshold: 0.5 });
       observer.observe(current);
     }
 

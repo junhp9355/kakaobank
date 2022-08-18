@@ -6,7 +6,7 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
   const handleDirection = (name) => {
     switch (name) {
       case "up":
-        return "translate3d(0, 100%, 0)";
+        return "translate3d(0, 0, 0)";
       case "down":
         return "translate3d(0, -50%, 0)";
       case "left":
@@ -26,11 +26,11 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
       if (entry.isIntersecting) {
         current.style.transitionProperty = "all";
         current.style.transitionDuration = `${duration}s`;
-        current.style.transitionTimingFunction = "ease";
+        current.style.transitionTimingFunction =
+          "cubic-bezier(0.6, 0.2, 0.1, 1)";
         current.style.transitionDelay = `${delay}s`;
         current.style.opacity = 1;
-        current.style.transform = "translate3d(0, 0, 0)";
-        current.scale.backgroundSize = 1;
+        current.style.transform = "translate3d(0, -100%, 0)";
       }
     },
     [delay, duration]
@@ -38,10 +38,15 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
 
   useEffect(() => {
     let observer;
+    const option = {
+      root: null,
+      rootmargin: "0px",
+      threshold: 0.3,
+    };
     const { current } = element;
 
     if (current) {
-      observer = new IntersectionObserver(handleScroll, { threshold: 1 });
+      observer = new IntersectionObserver(handleScroll, option);
       observer.observe(current);
     }
 
@@ -51,7 +56,7 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
   return {
     ref: element,
     style: {
-      opacity: 0,
+      opacity: 1,
       transform: handleDirection(direction),
     },
   };

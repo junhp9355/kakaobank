@@ -1,27 +1,38 @@
 import React from "react";
 import "../styles/Page07.css";
 import Scroll_pg07 from "./Scroll_pg07";
+import Scroll_pg07bg from "./Scroll_pg07bg";
+import Scroll_pg07sun from "./Scroll_pg07sun";
+import Scroll_pg07star from "./Scroll_pg07star";
 
 const Page07 = () => {
   const animatedItem = {
-    1: Scroll_pg07('up', 1.2, 0),
-    2: Scroll_pg07('diagonal', 1.4, 0.5)
-  }
+    1: Scroll_pg07bg("up", 1.2, 0),
+    2: Scroll_pg07("diagonal", 1, 1.2),
+    3: Scroll_pg07sun(1, 1.2),
+    4: Scroll_pg07star("fadeIn", 1, 1.2),
+  };
   return (
     <section className="Page07">
-      <section className="Page07background"></section>
+      <section className="Page07background">
+        <section className="StarMain">
+          <div className="Star01" />
+          <div className="Star02" />
+          <div className="Star03" />
+          <div className="Star04" />
+          <div className="Star05" />
+          <div className="Star06" />
+          <div className="Star07" />
+          <div className="Star08" />
+          <div className="Star09" />
+          <div className="Star10" />
+          <div className="Star11" />
+        </section>
+      </section>
       <section {...animatedItem[1]} className="Page07bgchnage"></section>
       <section className="SUNfixed">
-        <section className="SunMoon"></section>
-        <section {...animatedItem[2]} className="SunMoonshadow"/>
-      </section>
-      <section className="StarMain">
-        <div className="Star01" />
-        <div className="Star02" />
-        <div className="Star03" />
-        <div className="Star04" />
-        <div className="Star05" />
-        <div className="Star06" />
+        <section {...animatedItem[3]} className="SunMoon"></section>
+        <section {...animatedItem[2]} className="SunMoonshadow" />
       </section>
       <nav className="Page07fixed">
         <div className="Pg07textMain">

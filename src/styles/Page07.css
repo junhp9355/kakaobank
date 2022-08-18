@@ -12,7 +12,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #559cde;
+  /* background-color: #559cde; */
+  background-color: #333b58;
   /* display: flex; */
 }
 
@@ -22,7 +23,7 @@
   height: 100%;
   /* animation: bgChange 1.4s;
   animation-delay: 1.5s; */
-  background-color: #333b58;
+  background-color: #559cde;
   animation-fill-mode: forwards;
 }
 /* @keyframes bgChange {
@@ -49,12 +50,12 @@
   border-radius: 50%;
   top: 200px;
   left: 1400px;
-  animation: SUNMOON 0.85s;
-  animation-delay: 0.5s;
+  /* animation: SUNMOON 0.85s;
+  animation-delay: 0.5s; */
   animation-fill-mode: forwards;
 }
 
-@keyframes SUNMOON {
+/* @keyframes SUNMOON {
   100% {
     background-color: white;
   }
@@ -62,35 +63,29 @@
     background-color: yellow;
     animation-timing-function: ease;
   }
-}
+} */
 
 .SunMoonshadow {
-  background-color: red;
+  background-color: #333b58;
   width: 132px;
   height: 132px;
   position: absolute;
   border-radius: 50%;
   top: 170px;
   left: 1370px;
-  /* animation: SUNMOONshadow 1s;
-  animation-delay: 0.85s; */
+  /* animation: SUNMOONshadow 1s; */
   animation-fill-mode: forwards;
 }
 
 /* @keyframes SUNMOONshadow {
   100% {
-    top: 170px;
-    left: 1370px;
-    background-color: #333b58;
   }
   25% {
-    background-color: #333b58;
+    opacity: 1;
   }
 
   0% {
-    top: 100px;
-    left: 1300px;
-    animation-timing-function: ease;
+    opacity: 0;
   }
 } */
 
@@ -159,6 +154,10 @@
   padding: 0 10px 0 0;
 }
 
+.Pg07bannerMain div a:hover {
+  text-decoration: underline;
+}
+
 .Pg07bannerMain img {
   width: 6px;
   height: 9px;
@@ -199,38 +198,38 @@
 }
 
 .Star01 {
-  width: 5px;
-  height: 5px;
+  width: 3.5px;
+  height: 3.5px;
   top: 30%;
-  left: 80%;
+  left: 85%;
   position: absolute;
   border-radius: 50%;
   background-color: white;
-  animation: STAR 3s infinite;
+  animation: STAR 1.5s infinite;
   animation-delay: 1.5s;
   animation-timing-function: ease;
 }
 .Star02 {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   top: 60%;
   left: 65%;
   position: absolute;
   border-radius: 50%;
   background-color: white;
-  animation: STAR 3s infinite;
+  animation: STAR 2.5s infinite;
   animation-delay: 3.5s;
   animation-timing-function: ease;
 }
 .Star03 {
-  width: 5px;
-  height: 5px;
+  width: 3.5px;
+  height: 3.5px;
   top: 20%;
   left: 20%;
   position: absolute;
   border-radius: 50%;
   background-color: white;
-  animation: STAR 3s infinite;
+  animation: STAR 2.5s infinite;
   animation-delay: 1.5s;
   animation-timing-function: ease;
 }
@@ -242,19 +241,19 @@
   position: absolute;
   border-radius: 50%;
   background-color: white;
-  animation: STAR 3s infinite;
+  animation: STAR 2.5s infinite;
   animation-delay: 3.5s;
   animation-timing-function: ease;
 }
 .Star05 {
-  width: 5px;
-  height: 5px;
+  width: 2.5px;
+  height: 2.5px;
   top: 80%;
   left: 80%;
   position: absolute;
   border-radius: 50%;
   background-color: white;
-  animation: STAR 3s infinite;
+  animation: STAR 2.5s infinite;
   animation-delay: 2.5s;
   animation-timing-function: ease;
 }
@@ -266,8 +265,68 @@
   position: absolute;
   border-radius: 50%;
   background-color: white;
+  animation: STAR 2.5s infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+}
+.Star07 {
+  width: 3px;
+  height: 3px;
+  top: 52%;
+  left: 95%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  animation: STAR 3.1s infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+}
+.Star08 {
+  width: 3px;
+  height: 3px;
+  top: 88%;
+  left: 62%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  animation: STAR 2.9s infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+}
+.Star09 {
+  width: 1.5px;
+  height: 1.5px;
+  top: 60%;
+  left: 27%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
   animation: STAR 3s infinite;
   animation-delay: 1.5s;
+  animation-timing-function: ease;
+}
+.Star10 {
+  width: 2px;
+  height: 2px;
+  top: 15%;
+  left: 5%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  animation: STAR 2.8s infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+}
+.Star11 {
+  width: 3px;
+  height: 3px;
+  top: 10%;
+  left: 90%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  animation: STAR 2.5s infinite;
+  animation-delay: 3s;
   animation-timing-function: ease;
 }
 

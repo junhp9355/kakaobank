@@ -7,7 +7,9 @@ import Page04 from "./components/Page04";
 import Page05 from "./components/Page05";
 import Page06 from "./components/Page06";
 import Page07 from "./components/Page07";
+import Page08 from "./components/Page08";
 import TopLogo from "./components/TopLogo";
+import Test from "./components/Test";
 import "../src/styles/TopSubMenu.css";
 // import Scroll from "./components/Scroll";
 
@@ -42,7 +44,10 @@ const App = () => {
           <Page07 classname="Page07Main" />
         </div>
         <div>
-          <Page01 classname="Page08Main" />
+          <Page08 classname="Page08Main" />
+        </div>
+        <div>
+          <Test classname="Page09Main" />
         </div>
       </div>
     </section>
