@@ -1,0 +1,68 @@
+.Page08 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  width: 100vw;
+  height: 1062px;
+  text-align: center;
+  font-family: "GmarketLight";
+}
+
+.Pg08fixed {
+  margin-top: 280px;
+  width: 1300px;
+  height: 100%;
+}
+
+.slick {
+  position: relative;
+  left: 170px;
+  margin-top: -10px;
+}
+
+.pg08text01 {
+  font-family: "GmarketMedium";
+  font-size: 40px;
+  margin-bottom: 25px;
+  letter-spacing: -0.3px;
+}
+
+.pg08text02 {
+  margin: 25px;
+  margin-bottom: 60px;
+}
+
+.pg08bannermain {
+  position: relative;
+  width: 1000px;
+  height: 50px;
+  text-align: center;
+  left: 9%;
+}
+
+.pg08banner {
+  position: absolute;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  color: inherit;
+  font-weight: 600;
+  left: 39%;
+  padding: 20px 50px 17px 35px;
+  /* background-color: red; */
+}
+
+.pg08banner:hover {
+  text-decoration: underline;
+}
+
+.Pg08bankbookIcon {
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  margin-top: 4px;
+  margin-left: 10px;
+}
