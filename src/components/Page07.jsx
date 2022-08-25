@@ -8,7 +8,7 @@ import Scroll_pg07star from "./Scroll_pg07star";
 const Page07 = () => {
   const animatedItem = {
     1: Scroll_pg07bg("up", 1.2, 0),
-    2: Scroll_pg07("diagonal", 1, 1.2),
+    2: Scroll_pg07("diagonal", 1, 1),
     3: Scroll_pg07sun(1, 1.2),
     4: Scroll_pg07star("fadeIn", 1, 1.2),
   };
@@ -31,7 +31,7 @@ const Page07 = () => {
       </section>
       <section {...animatedItem[1]} className="Page07bgchnage"></section>
       <section className="SUNfixed">
-        <section {...animatedItem[3]} className="SunMoon"></section>
+        <section {...animatedItem[3]} className="SunMoon" />
         <section {...animatedItem[2]} className="SunMoonshadow" />
       </section>
       <nav className="Page07fixed">

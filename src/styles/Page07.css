@@ -12,29 +12,17 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background-color: #559cde; */
   background-color: #333b58;
-  /* display: flex; */
 }
 
 .Page07bgchnage {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* animation: bgChange 1.4s;
-  animation-delay: 1.5s; */
+
   background-color: #559cde;
   animation-fill-mode: forwards;
 }
-/* @keyframes bgChange {
-  100% {
-    transform: translatetY(0px);
-  }
-  0% {
-    transform: translateY(930px);
-    animation-timing-function: cubic-bezier(0.8, 0.2, 0.1, 1);
-  }
-} */
 
 .SUNfixed {
   position: absolute;
@@ -50,54 +38,31 @@
   border-radius: 50%;
   top: 200px;
   left: 1400px;
-  /* animation: SUNMOON 0.85s;
-  animation-delay: 0.5s; */
   animation-fill-mode: forwards;
 }
 
-/* @keyframes SUNMOON {
-  100% {
-    background-color: white;
-  }
-  0% {
-    background-color: yellow;
-    animation-timing-function: ease;
-  }
-} */
-
 .SunMoonshadow {
   background-color: #333b58;
+
+  /* background-color: red; */
   width: 132px;
   height: 132px;
   position: absolute;
   border-radius: 50%;
   top: 170px;
   left: 1370px;
-  /* animation: SUNMOONshadow 1s; */
+  opacity: 0;
   animation-fill-mode: forwards;
+  z-index: 1;
 }
-
-/* @keyframes SUNMOONshadow {
-  100% {
-  }
-  25% {
-    opacity: 1;
-  }
-
-  0% {
-    opacity: 0;
-  }
-} */
 
 .Page07fixed {
   width: 1300px;
   height: 100%;
   position: relative;
-  /* background-color: red; */
 }
 
 .Pg07textMain {
-  /* background-color: yellow; */
   position: absolute;
   text-align: center;
   width: 100%;
@@ -106,6 +71,7 @@
   font-size: 15px;
   color: #ffffff;
   top: 14%;
+  z-index: 2;
 }
 
 .Pg07text01 {
@@ -124,14 +90,13 @@
   font-weight: 600;
   margin-top: 50px;
   width: 100%;
-  /* background-color: orange; */
+
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
 .Pg07bannerMain div {
-  /* padding: 20px 35px 17px 25px; */
   position: relative;
   background-color: rgba(255, 255, 255, 0.09);
   border-radius: 10px;

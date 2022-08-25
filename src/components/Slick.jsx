@@ -4,27 +4,27 @@ import "../styles/slick.css";
 import "../styles/slick-theme.css";
 
 const Slick = () => {
-  const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "" }}
-        onClick={onClick}
-      />
-    );
-  };
+  // const SampleNextArrow = (props) => {
+  //   const { className, style, onClick } = props;
+  //   return (
+  //     <div
+  //       className={className}
+  //       style={{ ...style, display: "block", background: "" }}
+  //       onClick={onClick}
+  //     />
+  //   );
+  // };
 
-  const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "" }}
-        onClick={onClick}
-      />
-    );
-  };
+  // const SamplePrevArrow = (props) => {
+  //   const { className, style, onClick } = props;
+  //   return (
+  //     <div
+  //       className={className}
+  //       style={{ ...style, display: "block", background: "" }}
+  //       onClick={onClick}
+  //     />
+  //   );
+  // };
 
   const settings = {
     dots: false, //carousel 밑에 지정 콘텐츠로 바로 이동할 수 있는 버튼을 뜻한다. flase 할시 사라진다.
@@ -35,8 +35,8 @@ const Slick = () => {
     arrows: true,
     centerMode: true,
     centerPadding: "0px",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
   };
 
   return (

@@ -8,6 +8,8 @@ import Page05 from "./components/Page05";
 import Page06 from "./components/Page06";
 import Page07 from "./components/Page07";
 import Page08 from "./components/Page08";
+import Page09 from "./components/Page09";
+import Bottom from "./components/Bottom";
 import TopLogo from "./components/TopLogo";
 import "../src/styles/TopSubMenu.css";
 
@@ -43,6 +45,12 @@ const App = () => {
         </div>
         <div>
           <Page08 classname="Page08Main" />
+        </div>
+        <div>
+          <Page09 classname="Page09Main" />
+        </div>
+        <div>
+          <Bottom classname="BottomMain" />
         </div>
       </div>
     </section>

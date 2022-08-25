@@ -28,9 +28,9 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
         current.style.transitionDuration = `${duration}s`;
         current.style.transitionTimingFunction = "ease";
         current.style.transitionDelay = `${delay}s`;
-        current.style.opacity = 1;
+        current.style.opacity = "1";
         current.style.transform = "translate3d(0, 0, 0)";
-        current.scale.backgroundSize = 1;
+        // current.style.backgroundColor = "#333b58";
       }
     },
     [delay, duration]
@@ -52,6 +52,7 @@ const Scroll = (direction = "up", duration = 1, delay = 0) => {
     ref: element,
     style: {
       opacity: 0,
+      // backgroundColor: "#559cde",
       transform: handleDirection(direction),
     },
   };

@@ -1,0 +1,60 @@
+.Page09 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 1050px;
+  font-family: "GmarketLight";
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.pg09imgtext01 {
+  font-family: "GmarketMedium";
+  font-size: 18px;
+}
+..pg09imgtext01 {
+  font-size: 14px;
+}
+
+.pg09text01 {
+  font-family: "GmarketMedium";
+  font-size: 40px;
+}
+
+.pg09img {
+  width: 1020px;
+  height: 270px;
+}
+
+.pg09textmain {
+  margin-top: 168px;
+  margin-bottom: 150px;
+}
+
+.pg09bar {
+  margin: auto;
+  background-color: black;
+  height: 2px;
+  width: 100px;
+}
+
+.pg09imgtextmain {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 210px;
+}
+
+.pg09imgtextfixed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  height: 210px;
+}
+
+.pg09imgtext02 {
+  margin-top: -5px;
+}

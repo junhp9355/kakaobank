@@ -1,7 +1,6 @@
 .Con {
   width: 800px;
   height: 1300px;
-  /* background-color: red; */
   position: relative;
   left: 5%;
   text-align: center;
@@ -45,7 +44,6 @@
   left: 1%;
   margin: 0;
   padding: 0;
-  /* background-color: red; */
 }
 .slick-list:focus {
   display: none;
@@ -72,7 +70,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: blue; */
 }
 .slick-track:before,
 .slick-track:after {

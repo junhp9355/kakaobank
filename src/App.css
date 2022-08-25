@@ -37,3 +37,7 @@
 .Page08Main {
   z-index: 1000;
 } */
+
+::selection {
+  background-color: #fede22;
+}
