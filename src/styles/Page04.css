@@ -9,7 +9,6 @@
 
 .Page04fixed {
   position: absolute;
-  /* background-color: blue; */
   width: 1300px;
   height: 100%;
 }
@@ -28,16 +27,15 @@
   top: 23%;
   width: 500px;
   height: 100%;
-  /* background-color: red; */
 }
 
 .Pg04text01 {
-  font-family: "GamrketMedium";
+  font-family: "NanumB";
   position: absolute;
 }
 
 .Pg04text02 {
-  font-family: "GmarketLight";
+  font-family: "NanumL";
   position: absolute;
   line-height: 25px;
   margin-top: 10px;
@@ -47,18 +45,15 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background-color: yellow; */
-
   top: 37%;
 }
 
 .Pg04banner {
-  /* text-align: center; */
   padding: 20px 110px 16px 92px;
   background-color: #f6f6f6f6;
   position: absolute;
   border-radius: 10px;
-  font-family: "GmarketLight";
+  font-family: "NanumR";
   font-weight: 600;
   color: inherit;
 }

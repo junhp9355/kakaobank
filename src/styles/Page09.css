@@ -3,13 +3,13 @@
   position: relative;
   width: 100vw;
   height: 1050px;
-  font-family: "GmarketLight";
+  font-family: "NanumL";
   text-align: center;
   background-color: #f9f9f9;
 }
 
 .pg09imgtext01 {
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   font-size: 18px;
 }
 ..pg09imgtext01 {
@@ -17,7 +17,7 @@
 }
 
 .pg09text01 {
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   font-size: 40px;
 }
 

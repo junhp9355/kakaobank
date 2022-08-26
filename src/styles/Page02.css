@@ -26,7 +26,7 @@
 
 .Pg2text1 {
   position: absolute;
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   font-size: 40px;
   margin-top: 15%;
   line-height: 50px;
@@ -34,7 +34,7 @@
 
 .Pg2text2 {
   position: absolute;
-  font-family: "GmarketLight";
+  font-family: "NanumL";
   font-weight: bold;
   font-size: 15px;
   margin-top: 40%;
@@ -45,7 +45,7 @@
   position: absolute;
   background-color: #f6f6f6;
   text-align: center;
-  font-family: "GmarketLight";
+  font-family: "NanumR";
   padding: 20px 55px 15px 45px;
   border-radius: 10px;
   color: black;

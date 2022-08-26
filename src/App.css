@@ -13,6 +13,26 @@
   src: url(../src/assets/font/GmarketSansTTFLight.ttf);
 }
 
+@font-face {
+  font-family: "NanumB";
+  src: url(../src/assets/font/NanumSquareRoundB.ttf);
+}
+
+@font-face {
+  font-family: "NanumEB";
+  src: url(../src/assets/font/NanumSquareRoundEB.ttf);
+}
+
+@font-face {
+  font-family: "NanumL";
+  src: url(../src/assets/font/NanumSquareRoundL.ttf);
+}
+
+@font-face {
+  font-family: "NanumR";
+  src: url(../src/assets/font/NanumSquareRoundR.ttf);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -29,14 +49,6 @@
   height: 32px;
   background-color: #fafafa;
 }
-
-/* .Page07Main {
-  z-index: 800;
-}
-
-.Page08Main {
-  z-index: 1000;
-} */
 
 ::selection {
   background-color: #fede22;

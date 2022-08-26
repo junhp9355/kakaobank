@@ -4,7 +4,6 @@
   height: 884px;
   margin-top: 80px;
   background-color: white;
-
 }
 
 .background {
@@ -20,12 +19,11 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  
 }
 
 .text01-1 {
   display: block;
-  font-family: "Gmarketmedium";
+  font-family: "NanumR";
   font-size: 48px;
   width: 400px;
   height: 137px;
@@ -33,17 +31,15 @@
   margin-right: 640px;
   margin-top: 140px;
   position: absolute;
-
 }
 
 .text01-2 {
   display: block;
-  font-family: "Gmarketlight";
+  font-family: "NanumL";
   font-size: 16px;
   width: 400px;
   height: 62px;
   line-height: 30px;
-
 }
 
 .img01 {
@@ -77,11 +73,11 @@
   margin-left: -340px;
 }
 
-.googleIconName{
+.googleIconName {
   position: absolute;
   width: 200px;
   height: 58px;
-  font-weight:500;
+  font-weight: 500;
   font-size: 19px;
   padding: 0px;
   color: inherit;
@@ -94,7 +90,6 @@
 .googleIconName:hover {
   text-decoration: underline;
 }
-
 
 .iconBanner2 {
   position: relative;
@@ -120,11 +115,11 @@
   margin-left: -370px;
 }
 
-.appleIconName{
+.appleIconName {
   position: absolute;
   width: 200px;
   height: 58px;
-  font-weight:500;
+  font-weight: 500;
   font-size: 19px;
   padding: 0px;
   color: inherit;
@@ -141,4 +136,3 @@
 .Page01br {
   height: 30px;
 }
-

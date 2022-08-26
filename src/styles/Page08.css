@@ -8,7 +8,7 @@
   width: 100vw;
   height: 1062px;
   text-align: center;
-  font-family: "GmarketLight";
+  font-family: "NanumL";
 }
 
 .Pg08fixed {
@@ -24,7 +24,7 @@
 }
 
 .pg08text01 {
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   font-size: 40px;
   margin-bottom: 25px;
   letter-spacing: -0.3px;
@@ -37,6 +37,7 @@
 
 .pg08bannermain {
   position: relative;
+  font-family: "NanumR";
   width: 1000px;
   height: 50px;
   text-align: center;
@@ -52,7 +53,6 @@
   font-weight: 600;
   left: 39%;
   padding: 20px 50px 17px 35px;
-  /* background-color: red; */
 }
 
 .pg08banner:hover {

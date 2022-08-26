@@ -45,6 +45,34 @@ const Bottom = () => {
           <p>대표전화 1599-3333</p>
           <p>(해외 +82-2-6420-3333)</p>
         </div>
+        <div className="Bottomtext02">
+          <p className="bold">
+            Copyright © KakaoBank Corp. All rights reserved.
+          </p>
+        </div>
+
+        <div className="bottomimgmain">
+          <img
+            className="bottomimg"
+            src="img/webaccessibility.png"
+            alt="webaccessibility"
+          />
+          <p>웹 접근성 품질인증</p>
+          <div className="BottomIcon">
+            <a className="BottomIcons" href="#!">
+              <div className="BottomFacebookicon" />
+            </a>
+            <a className="BottomIcons" href="#!">
+              <div className="BottomInstagramicon" />
+            </a>
+            <a className="BottomIcons" href="#!">
+              <div className="BottomYoutubeicon" />
+            </a>
+            <a className="BottomIcons" href="#!">
+              <div className="BottomBrunchicon" />
+            </a>
+          </div>
+        </div>
       </nav>
     </section>
   );

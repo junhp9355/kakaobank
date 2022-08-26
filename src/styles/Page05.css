@@ -11,7 +11,6 @@
   width: 1300px;
   height: 100%;
   position: absolute;
-  /* background-color: blue; */
 }
 
 .Pg05bg {
@@ -24,7 +23,6 @@
 
 .Pg05textMain {
   position: absolute;
-  /* background-color: yellow; */
   height: 100%;
   left: 40%;
   top: 22%;
@@ -34,12 +32,11 @@
   position: absolute;
   width: 600px;
   height: 100%;
-  /* background-color: red; */
-  font-family: "GmarketLight";
+  font-family: "NanumL";
 }
 
 .Pg05text01 {
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   font-size: 40px;
   line-height: 50px;
 }
@@ -59,6 +56,7 @@
   padding: 20px 110px 17px 90px;
   border-radius: 10px;
   top: 39%;
+  font-family: "NanumR";
 }
 
 .Pg05benner:hover {

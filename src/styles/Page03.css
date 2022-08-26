@@ -10,7 +10,6 @@
   position: absolute;
   width: 1200px;
   height: 100%;
-  /* background-color: red; */
 }
 
 .Page03bg {
@@ -19,21 +18,7 @@
   height: 722px;
   left: 60%;
   top: 2%;
-  /* animation: moveToRight 1.4s;
-  animation-delay: 1.5s; */
 }
-
-/* @keyframes moveToRight {
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  from {
-    transform: translateX(100px);
-    opacity: 0;
-    animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
-  }
-} */
 
 .Page03SubBg {
   position: absolute;
@@ -53,21 +38,21 @@
 
 .Pg03text01 {
   font-size: 40px;
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   margin-bottom: 20px;
   line-height: 50px;
   letter-spacing: -0.5px;
 }
 
 .Pg03text02 {
-  font-family: "GmarketLight";
+  font-family: "NanumL";
   margin-bottom: 40px;
   line-height: 30px;
   letter-spacing: -1px;
 }
 
 .Pg03banner01 {
-  font-family: "GmarketLight";
+  font-family: "NanumR";
   padding: 20px 52px 17px 45px;
   background-color: #f6f6f6f6;
   border-radius: 10px;
@@ -78,7 +63,7 @@
 }
 
 .Pg03banner02 {
-  font-family: "GmarketLight";
+  font-family: "NanumR";
   padding: 20px 52px 17px 45px;
   background-color: #f6f6f6f6;
   margin-left: 8px;
@@ -93,7 +78,7 @@
 
 .Pg03bannerMain {
   font-size: 16px;
-  font-family: "GmarketLight";
+  font-family: "NanumL";
   font-weight: 800;
   width: 100%;
   height: 100%;

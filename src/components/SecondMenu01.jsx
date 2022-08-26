@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/SecondMenu01.css";
 
 const SecondMenu01 = () => {
@@ -62,9 +63,11 @@ const SecondMenu01 = () => {
           </a>
         </li>
         <li>
-          <a href="#!" className="second-sub-title">
-            공지사항
-          </a>
+          <Link to="/notice">
+            <a href="#!" className="second-sub-title">
+              공지사항
+            </a>
+          </Link>
         </li>
         <li>
           <a href="#!" className="second-sub-title">

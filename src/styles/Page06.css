@@ -22,13 +22,13 @@
   position: absolute;
   height: 100%;
   /* background-color: blue; */
-  font-family: "GmarketLight";
+  font-family: "NanumL";
   left: 57%;
   top: 22%;
 }
 
 .Pg06text01 {
-  font-family: "GmarketMedium";
+  font-family: "NanumB";
   font-size: 40px;
   line-height: 52px;
   letter-spacing: -1px;
@@ -43,6 +43,7 @@
 
 .Pg06banner {
   position: absolute;
+  font-family: "NanumR";
   font-size: 16px;
   border-radius: 10px;
   background-color: #f6f6f6;
@@ -61,7 +62,7 @@
   width: 6px;
   height: 9px;
   top: 47.2%;
-  left: 47%;
+  left: 52%;
 }
 
 .Pg06bg {
@@ -70,18 +71,4 @@
   height: 715px;
   top: 3%;
   left: 15%;
-  /* animation: moveToUP 1.4s;
-  animation-delay: 1.5s; */
 }
-
-/* @keyframes moveToUP {
-  to {
-    transform: translatetY(0px);
-    opacity: 1;
-  }
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-    animation-timing-function: cubic-bezier(0.8, 0.2, 0.1, 1);
-  }
-} */

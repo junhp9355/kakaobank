@@ -7,7 +7,6 @@ li {
 .TopSubMenu {
   display: flex;
   width: 900px;
-  /* background-color: green; */
   justify-content: center;
   align-items: center;
   margin-left: 230px;
@@ -16,7 +15,6 @@ li {
 .menu-1 {
   height: 20px;
   width: 900px;
-  /* background-color: blue; */
 }
 
 .menu-1 > li {
@@ -28,7 +26,7 @@ li {
   font-size: 15px;
   padding: 40px 10px;
   margin: 0 10px;
-  font-family: "Gmarketmedium";
+  font-family: "NanumB";
   position: relative;
 }
 .first-menu:hover {
@@ -56,7 +54,7 @@ li {
   border-radius: 50px;
   margin-left: 20px;
   font-size: 15px;
-  font-family: "Gmarketmedium";
+  font-family: "NanumB";
 }
 
 .SecondMenuComp {
