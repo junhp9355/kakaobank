@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+}
+
+.space {
+  width: 100vw;
+  height: 32px;
+  background-color: #fafafa;
+}
+
+::selection {
+  background-color: #fede22;
+}
+
+.NoticeBody {
+  position: relative;
+  width: 1080px;
+  height: 780px;
+  margin: auto;
+}
+
+.NoticeContents {
+  margin: auto;
+}
+
+.NoticeContents > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.trth01 {
+  width: 70px;
+  height: 40.5px;
+  text-align: center;
+}
+
+.trth02 {
+  width: 895px;
+  height: 40.5px;
+  text-align: center;
+}
+
+.trth03 {
+  width: 115px;
+  height: 40.5px;
+  text-align: center;
+}
+
+tbody > tr > td:nth-child(1) {
+  text-align: center;
+}
+tbody > tr > td:nth-child(3) {
+  text-align: center;
+}
+
+tbody > tr > td > a {
+  margin-left: 50px;
+}

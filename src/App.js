@@ -18,7 +18,9 @@ const App = () => {
   return (
     <section className="container">
       <div classname="Main">
-        <TopLogo className="TopLogoMenu" />
+        <div>
+          <TopLogo className="TopLogoMenu" />
+        </div>
         <div>
           <Page01 classname="Page01Main" />
         </div>

@@ -58,9 +58,11 @@ const SecondMenu01 = () => {
       </ul>
       <ul className="Second-04">
         <li>
-          <a href="#!" className="second-title">
-            새소식
-          </a>
+          <Link to="/notice">
+            <a href="#!" className="second-title">
+              새소식
+            </a>
+          </Link>
         </li>
         <li>
           <Link to="/notice">
