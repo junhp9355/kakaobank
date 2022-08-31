@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Notice from "./notice/Notice";
+import NoticeInsert from "./notice/NoticeInsert";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -11,7 +12,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="notice" element={<Notice />} />
+      <Route path="/notice" element={<Notice />} />
+      <Route path="/notice/Write" element={<NoticeInsert />} />
     </Routes>
   </BrowserRouter>
 );

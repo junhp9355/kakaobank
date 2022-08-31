@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,14 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: block; */
 }
 
 .space {
   width: 100vw;
   height: 32px;
   background-color: #fafafa;
-}
+} */
 
 ::selection {
   background-color: #fede22;
@@ -66,4 +65,24 @@ tbody > tr > td:nth-child(3) {
 
 tbody > tr > td > a {
   margin-left: 50px;
+}
+
+.NoticeList {
+  width: 1080px;
+}
+
+.NoticeWritebutton {
+  outline: none;
+  border: none;
+  background: #eeeeee;
+  color: black;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: 0.2px grey;
+  outline-style: solid;
+  position: absolute;
+  right: 1.5%;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 3px 7px;
 }

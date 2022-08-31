@@ -1,0 +1,53 @@
+.NoticeListItem {
+  display: flex;
+  align-items: center;
+}
+.NoticeListItem-virtualized {
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+  &:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #e84118;
+  cursor: pointer;
+  &:hover {
+    color: #353535;
+  }
+}
+.edit {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.List {
+  display: flex;
+  width: 1080px;
+}
+
+.NoticeID {
+  width: 70px;
+  height: 40.5px;
+
+  text-align: center;
+}
+.NoticeDate {
+  width: 115px;
+  height: 40.5px;
+  text-align: center;
+}
+
+.NoticeTitle {
+  width: 895px;
+  height: 40.5px;
+  margin-left: 50px;
+}

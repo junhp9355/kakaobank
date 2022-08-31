@@ -3,10 +3,10 @@ import { ReactComponent as Logotop } from "../components/images/logo_black.svg";
 import "../styles/NoticeTopMenu.css";
 import { Link } from "react-router-dom";
 // import "../styles/NoticeTopSubMenu.css";
-import SecondMenu01 from "./SecondMenu01";
-import SecondMenu02 from "./SecondMenu02";
-import SecondMenu03 from "./SecondMenu03";
-import SecondMenu04 from "./SecondMenu04";
+import SecondMenu01 from "../components/SecondMenu01";
+import SecondMenu02 from "../components/SecondMenu02";
+import SecondMenu03 from "../components/SecondMenu03";
+import SecondMenu04 from "../components/SecondMenu04";
 
 const NoticeTopMenue = () => {
   return (
