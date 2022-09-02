@@ -6,6 +6,7 @@ import axios from "axios";
 import NoticeEdit from "./NoticeEdit";
 import NoticeList from "./NoticeList";
 import moment from "moment";
+import "moment/locale/ko";
 import { Link } from "react-router-dom";
 
 const Notice = () => {
@@ -14,17 +15,6 @@ const Notice = () => {
   const [insertToggle, setInsertToggle] = useState(false);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-
-  // const onInsert = async (title) => {
-  //   try {
-  //     const data = await axios.post("http://localhost:4000/Notice", {
-  //       title,
-  //     });
-  //     setNotice(data.data);
-  //   } catch (e) {
-  //     setError(e);
-  //   }
-  // };
 
   const onToggle = async (id) => {
     try {

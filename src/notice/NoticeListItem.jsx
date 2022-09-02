@@ -4,6 +4,8 @@ import {
   MdOutlineModeEditOutline,
   MdOutlineRemoveCircleOutline,
 } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 const NoticeListItem = ({
   noticeData,
   onRemove,
@@ -18,11 +20,13 @@ const NoticeListItem = ({
     <div className="NoticeListItem">
       <tbody className="List">
         <tr>
-          <td className="NoticeID">{id}</td>
-          <td className="NoticeTitle">
-            <a href="#!">{title}</a>
-          </td>
-          <td className="NoticeDate">{Date[0]}</td>
+          <Link to={`/notice/${id}`}>
+            <td className="NoticeID">{id}</td>
+            <td className="NoticeTitle">
+              <a href="#!">{title}</a>
+            </td>
+            <td className="NoticeDate">{Date[0]}</td>
+          </Link>
         </tr>
       </tbody>
       <div
