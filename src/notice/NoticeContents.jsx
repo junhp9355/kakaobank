@@ -1,42 +1,81 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import NoticeContentsItem from "./NoticeContentsItem";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import "../styles/Notice.css";
+import "../styles/NoticeContents.css";
+import "../styles/Bottom.css";
+import NoticeTopMenu from "./NoticeTopMenu";
+import Bottom from "../components/Bottom";
 
-const NoticeContents = ({ props, match }) => {
-  const [notice, setNotice] = useState([]);
+const NoticeContents = ({ props }) => {
+  const [contentItem, setContentItem] = useState([]);
+  const [selectNotice, setSelectNotice] = useState(null);
+  const [insertToggle, setInsertToggle] = useState(false);
   const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [title, setTitle] = useState("");
-  const [contents, setContents] = useState("");
+  const { id } = useParams();
 
   useEffect(() => {
-    const getData = async () => {
-      try {
-        const data = await axios.get("http://localhost:4000/kakaobank");
-        setNotice(data.data);
-        setIsLoading(false);
-      } catch (e) {
-        setError(e);
-      }
-    };
-    getData();
-  }, []);
+    getItem(id);
+  }, [id]);
 
-  if (error) {
-    console.log(error);
-    return <>에러:{error.message}</>;
-  }
+  const getItem = async (id) => {
+    try {
+      const data = await axios.get(`http://localhost:4000/kakaobank/${id}`);
+      setContentItem(data.data);
+    } catch (e) {
+      setError(e);
+    }
+  };
 
-  if (isLoading) {
-    return <>Loading...</>;
-  }
+  const onInsertToggle = () => {
+    setInsertToggle((prev) => !prev);
+  };
+  const onRemove = async (id) => {
+    const data = await axios.delete(`http://localhost:4000/kakaobank/${id}`);
+    setContentItem(data.data);
+  };
 
   return (
-    <section>
-      <div>콘텐츠 페이지</div>
-      {notice.map((noticeData) => (
-        <NoticeContentsItem noticeData={noticeData} setNotice={setNotice} />
-      ))}
+    <section className="container">
+      <div classname="Main">
+        <div className="NoticeTopLogo">
+          <NoticeTopMenu />
+        </div>
+        <div className="contentBody">
+          <br />
+          <div className="contentTitle">{contentItem.title}</div>
+          <br />
+          <div className="contentText">{contentItem.contents}</div>
+          <br />
+        </div>
+        <div className="contentButton">
+          <Link to={`/notice/${id}/edit`}>
+            <button className="contentedit">수정</button>
+          </Link>
+          <Link to="/notice">
+            <button
+              className="contentremove"
+              onClick={() => {
+                onRemove(contentItem.id);
+                alert("삭제되었습니다!");
+              }}
+            >
+              삭제
+            </button>
+          </Link>
+          <Link to="/notice">
+            <button className="contentListbutton" type="submit">
+              목록
+            </button>
+          </Link>
+        </div>
+        <br />
+        <br />
+        <div classname="BottomMain">
+          <Bottom />
+        </div>
+      </div>
     </section>
   );
 };

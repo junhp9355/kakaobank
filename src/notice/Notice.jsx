@@ -31,24 +31,6 @@ const Notice = () => {
     setInsertToggle((prev) => !prev);
   };
 
-  const onRemove = async (id) => {
-    const data = await axios.delete(`http://localhost:4000/kakaobank/${id}`);
-    setNotice(data.data);
-  };
-
-  const onUpdate = async (id, title) => {
-    try {
-      const data = await axios.patch(`http://localhost:4000/kakaobank/${id}`, {
-        title,
-        reg_date: moment().format("YYYY-MM-DD"),
-      });
-      setNotice(data.data);
-      onInsertToggle();
-    } catch (e) {
-      setError(e);
-    }
-  };
-
   useEffect(() => {
     const getData = async () => {
       try {
@@ -95,19 +77,18 @@ const Notice = () => {
           <div className="NoticeList">
             <NoticeList
               notice={notice}
-              onRemove={onRemove}
               onToggle={onToggle}
               onInsertToggle={onInsertToggle}
               setSelectNotice={setSelectNotice}
             />
-            {insertToggle && (
+            {/* {insertToggle && (
               <NoticeEdit
                 onInsertToggle={onInsertToggle}
                 selectNotice={selectNotice}
                 onUpdate={onUpdate}
               />
-            )}
-            <Link to="/Notice/Write">
+            )} */}
+            <Link to="/notice/Write">
               <button className="NoticeWritebutton" type="submit">
                 글쓰기
               </button>

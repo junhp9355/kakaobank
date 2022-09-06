@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../src/App.css";
 
 import Page01 from "./components/Page01";
@@ -13,8 +13,19 @@ import Page09 from "./components/Page09";
 import Bottom from "./components/Bottom";
 import TopLogo from "./components/TopLogo";
 import "../src/styles/TopSubMenu.css";
+import { useLocation } from "react-router-dom";
+
+let prePath = "";
 
 const App = () => {
+  let location = useLocation();
+
+  useEffect(() => {
+    if (prePath === location.pathname) window.location.reload();
+
+    prePath = location.pathname;
+  }, [location]);
+
   return (
     <section className="container">
       <div classname="Main">
