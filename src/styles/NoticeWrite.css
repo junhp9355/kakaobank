@@ -1,43 +1,25 @@
+/* .TodoInsert {
+  font-family: "nanumM";
+} */
+
+.InsertText {
+  font-family: "nanumB";
+  line-height: 30px;
+  margin-left: 130px;
+}
+
 .NoticeWrite {
   display: flex;
   flex-direction: column;
 }
 
 .NoticeWriteTitle {
-  width: 1073px;
+  width: 800px;
+  margin-left: 130px;
 }
 
 .NoticeWriteContents {
-  width: 1060px;
+  width: 800px;
   height: 400px;
-}
-
-.NoticeWriteSave {
-  border: none;
-  background: #eeeeee;
-  color: black;
-  font-size: 15px;
-  border-radius: 10px;
-  outline: 0.2px grey;
-  outline-style: solid;
-  position: relative;
-  right: -90%;
-  margin-top: 20px;
-  cursor: pointer;
-  padding: 3px 7px;
-}
-
-.NoticeWriteList {
-  border: none;
-  background: #eeeeee;
-  color: black;
-  font-size: 15px;
-  border-radius: 10px;
-  outline: 0.2px grey;
-  outline-style: solid;
-  position: relative;
-  right: -91%;
-  margin-top: 20px;
-  cursor: pointer;
-  padding: 3px 7px;
+  margin-left: 130px;
 }

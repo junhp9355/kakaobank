@@ -6,7 +6,7 @@ import "../styles/Notice.css";
 import "../styles/NoticeContents.css";
 import "../styles/Bottom.css";
 import NoticeTopMenu from "./NoticeTopMenu";
-import Bottom from "../components/Bottom";
+import NoticeBottom from "./NoticeBottom";
 
 const NoticeContents = ({ props }) => {
   const [contentItem, setContentItem] = useState([]);
@@ -46,7 +46,7 @@ const NoticeContents = ({ props }) => {
           <br />
           <div className="contentTitle">{contentItem.title}</div>
           <br />
-          <div className="contentText">{contentItem.contents}</div>
+          <pre className="contentText">{contentItem.contents}</pre>
           <br />
         </div>
         <div className="contentButton">
@@ -58,7 +58,7 @@ const NoticeContents = ({ props }) => {
               className="contentremove"
               onClick={() => {
                 onRemove(contentItem.id);
-                alert("삭제되었습니다!");
+                // alert("삭제되었습니다!");
               }}
             >
               삭제
@@ -72,8 +72,8 @@ const NoticeContents = ({ props }) => {
         </div>
         <br />
         <br />
-        <div classname="BottomMain">
-          <Bottom />
+        <div className="NoticeBottomPosition">
+          <NoticeBottom />
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/NoticeInsert.scss";
 import "../styles/NoticeWrite.css";
 import { Link } from "react-router-dom";
-import Bottom from "../components/Bottom";
+import NoticeBottom from "./NoticeBottom";
 import NoticeTopMenu from "../notice/NoticeTopMenu";
 import axios from "axios";
 
@@ -49,24 +49,25 @@ const NoticeInsert = () => {
             <p>글쓰기</p>
             <hr />
           </div>
-          <div>제목</div>
-          <input
-            placeholder="제목을 입력하세요"
-            className="NoticeWriteTitle"
-            type="text"
-            value={title}
-            onChange={onChangeTitle}
-          />
-          <div className="blank"></div>
-          <div>내용</div>
-          <textarea
-            className="NoticeWriteContents"
-            placeholder="내용을 입력하세요"
-            type="text"
-            value={contents}
-            onChange={onChangeContents}
-          />
-
+          <div className="InsertMain">
+            <div className="InsertText">제목</div>
+            <input
+              placeholder="제목을 입력하세요"
+              className="NoticeWriteTitle"
+              type="text"
+              value={title}
+              onChange={onChangeTitle}
+            />
+            <div className="blank"></div>
+            <div className="InsertText">내용</div>
+            <textarea
+              className="NoticeWriteContents"
+              placeholder="내용을 입력하세요"
+              type="text"
+              value={contents}
+              onChange={onChangeContents}
+            />
+          </div>
           <button
             className="NoticeWriteSave"
             type="submit"
@@ -83,8 +84,8 @@ const NoticeInsert = () => {
           </Link>
         </div>
 
-        <div classname="BottomMain">
-          <Bottom />
+        <div className="NoticeBottomPosition">
+          <NoticeBottom />
         </div>
       </div>
     </form>

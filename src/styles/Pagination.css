@@ -1,0 +1,53 @@
+.PageNav {
+  gap: 4px;
+  margin: 16px;
+  /* margin-left: 184px; */
+}
+
+.numbering {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0;
+  color: black;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.numbering:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+}
+
+.PageLeft {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0;
+  color: black;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.PageRight {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0;
+  color: black;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.PageRight:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+}
+
+.PageLeft:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NoticeTopMenu from "../notice/NoticeTopMenu";
-import Bottom from "../components/Bottom";
+import NoticeBottom from "./NoticeBottom";
 import "../styles/Notice.css";
 import axios from "axios";
 import NoticeEdit from "./NoticeEdit";
@@ -8,6 +8,7 @@ import NoticeList from "./NoticeList";
 import moment from "moment";
 import "moment/locale/ko";
 import { Link } from "react-router-dom";
+import Posts from "./Posts";
 
 const Notice = () => {
   const [notice, setNotice] = useState([]);
@@ -57,8 +58,8 @@ const Notice = () => {
   }
 
   return (
-    <section className="container">
-      <div classname="Main">
+    <section className="Noticecontainer">
+      <div classname="NoticeMain">
         <div className="NoticeTopLogo">
           <NoticeTopMenu />
         </div>
@@ -66,13 +67,14 @@ const Notice = () => {
           <div className="NoticeContents">
             <p>공지사항</p>
             <hr />
-            <thead>
+            <br />
+            <div className="NoticeSubTitle">
               <tr>
                 <th className="trth01">No</th>
                 <th className="trth02">제목</th>
                 <th className="trth03">등록일</th>
               </tr>
-            </thead>
+            </div>
           </div>
           <div className="NoticeList">
             <NoticeList
@@ -88,16 +90,11 @@ const Notice = () => {
                 onUpdate={onUpdate}
               />
             )} */}
-            <Link to="/notice/Write">
-              <button className="NoticeWritebutton" type="submit">
-                글쓰기
-              </button>
-            </Link>
           </div>
         </div>
-        <div classname="BottomMain">
-          <Bottom />
-        </div>
+      </div>
+      <div className="NoticeBottomPosition">
+        <NoticeBottom />
       </div>
     </section>
   );

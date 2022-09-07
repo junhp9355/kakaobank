@@ -1,41 +1,43 @@
-/* .container {
+.Noticecontainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: auto;
+  /* background-color: rebeccapurple; */
 }
-
-.Main {
+/* 
+.NoticeMain {
   position: absolute;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.space {
-  width: 100vw;
-  height: 32px;
-  background-color: #fafafa;
+  height: 100vh;
+  background-color: red;
 } */
-
-::selection {
-  background-color: #fede22;
-}
 
 .NoticeBody {
   position: relative;
+  top: 50px;
   width: 1080px;
-  height: 780px;
+  height: auto;
   margin: auto;
+  font-family: "NanumM";
 }
 
 .NoticeContents {
   margin: auto;
+  font-size: 16px;
+}
+
+.NoticeSubTitle {
+  background-color: #f4f4f4;
+  width: auto;
+  height: auto;
+  border-top: solid rgb(209, 209, 209) 1px;
+  vertical-align: middle;
 }
 
 .NoticeContents > p {
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bold;
+  font-family: "NanumEB";
 }
 
 .trth01 {
@@ -71,18 +73,7 @@ tbody > tr > td > a {
   width: 1080px;
 }
 
-.NoticeWritebutton {
-  outline: none;
-  border: none;
-  background: #eeeeee;
-  color: black;
-  font-size: 15px;
-  border-radius: 10px;
-  outline: 0.2px grey;
-  outline-style: solid;
+.NoticeBottomPosition {
   position: absolute;
-  right: 1.5%;
-  margin-top: 20px;
-  cursor: pointer;
-  padding: 3px 7px;
+  bottom: 0;
 }

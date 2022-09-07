@@ -1,3 +1,8 @@
+.NoticeList {
+  font-family: "nanumM";
+  font-size: 14px;
+}
+
 .NoticeListItem {
   display: flex;
   align-items: center;
@@ -36,18 +41,29 @@
 
 .NoticeID {
   width: 70px;
-  height: 40.5px;
-
+  height: 45px;
   text-align: center;
+  vertical-align: middle;
+  color: #a3a3a3;
+  border-bottom: solid rgb(209, 209, 209) 1px;
 }
 .NoticeDate {
   width: 115px;
-  height: 40.5px;
+  height: 45px;
   text-align: center;
+  vertical-align: middle;
+  color: #a3a3a3;
+  border-bottom: solid rgb(209, 209, 209) 1px;
 }
 
 .NoticeTitle {
   width: 895px;
-  height: 40.5px;
+  height: 45px;
+  vertical-align: middle;
+  border-bottom: solid rgb(209, 209, 209) 1px;
+}
+
+.NoticeTitle > a {
   margin-left: 50px;
+  vertical-align: middle;
 }

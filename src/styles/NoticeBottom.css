@@ -1,13 +1,12 @@
-.Bottom {
+.NoticeBottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 200px;
   font-family: "NanumL";
   background-color: #eeeeee;
-  bottom: 0;
 }
 
 a {

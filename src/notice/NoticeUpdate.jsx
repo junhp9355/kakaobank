@@ -2,38 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/NoticeInsert.scss";
 import "../styles/NoticeWrite.css";
+import "../styles/NoticeUpdate.css";
 import { Link } from "react-router-dom";
-import Bottom from "../components/Bottom";
+import NoticeBottom from "./NoticeBottom";
 import NoticeTopMenu from "../notice/NoticeTopMenu";
 import axios from "axios";
 
 const NoticeInsert = () => {
-  // const [value, setValue] = useState("");
-  // const onChange = (e) => {
-  //   setValue(e.target.value);
-  // };
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   onUpdate(selectNotice.id, value);
-  //   setValue("");
-  // };
-  // useEffect(() => {
-  //   setValue(selectNotice.title);
-  // }, [selectNotice]);
-
-  // const onUpdate = async (id, title) => {
-  //   try {
-  //     const data = await axios.patch(`http://localhost:4000/kakaobank/${id}`, {
-  //       title,
-  //       reg_date: moment().format("YYYY-MM-DD"),
-  //     });
-  //     setNotice(data.data);
-  //     onInsertToggle();
-  //   } catch (e) {
-  //     setError(e);
-  //   }
-  // };
-
   const [contentItem, setContentItem] = useState([]);
   const [selectNotice, setSelectNotice] = useState(null);
   const [insertToggle, setInsertToggle] = useState(false);
@@ -41,6 +16,20 @@ const NoticeInsert = () => {
   const [contents, setContents] = useState("");
   const [error, setError] = useState(null);
   const { id } = useParams();
+  const [value, setValue] = useState("");
+
+  const onUpdate = async (title, contents) => {
+    try {
+      const data = await axios.patch(`http://localhost:4000/kakaobank/${id}`, {
+        title,
+        contents,
+      });
+      setContentItem(data.data);
+      onInsertToggle();
+    } catch (e) {
+      setError(e);
+    }
+  };
 
   useEffect(() => {
     getItem(id);
@@ -55,6 +44,10 @@ const NoticeInsert = () => {
     }
   };
 
+  const onInsertToggle = () => {
+    setInsertToggle((prev) => !prev);
+  };
+
   const onChangeTitle = (e) => {
     setTitle(e.target.value);
   };
@@ -62,15 +55,15 @@ const NoticeInsert = () => {
     setContents(e.target.value);
   };
 
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   onInsert(title, contents);
-  //   setTitle("");
-  //   setContents("");
-  // };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    onUpdate(title, contents);
+    setTitle("");
+    setContents("");
+  };
 
   return (
-    <form className="TodoInsert">
+    <form className="TodoInsert" onSubmit={onSubmit}>
       <div classname="Main">
         <div className="NoticeTopLogo">
           <NoticeTopMenu />
@@ -85,6 +78,7 @@ const NoticeInsert = () => {
             placeholder={contentItem.title}
             className="NoticeWriteTitle"
             type="text"
+            value={title}
             onChange={onChangeTitle}
           />
           <div className="blank"></div>
@@ -93,8 +87,11 @@ const NoticeInsert = () => {
             className="NoticeWriteContents"
             placeholder={contentItem.contents}
             type="text"
+            value={contents}
             onChange={onChangeContents}
           />
+        </div>
+        <div>
           <button
             className="NoticeWriteSave"
             type="submit"
@@ -110,9 +107,8 @@ const NoticeInsert = () => {
             </button>
           </Link>
         </div>
-
-        <div classname="BottomMain">
-          <Bottom />
+        <div className="NoticeBottomPosition">
+          <NoticeBottom />
         </div>
       </div>
     </form>
