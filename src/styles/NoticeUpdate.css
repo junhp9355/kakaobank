@@ -1,4 +1,13 @@
-.NoticeWriteSave {
+.Updatebuttonfixed{
+  display: inline-block;
+  width: 1080px;
+  height: 150px;
+  background-color: red;
+}
+
+
+
+.NoticeUpdateSave {
   border: none;
   background: #eeeeee;
   color: black;
@@ -13,7 +22,7 @@
   padding: 3px 7px;
 }
 
-.NoticeWriteList {
+.NoticeUpdateList {
   border: none;
   background: #eeeeee;
   color: black;

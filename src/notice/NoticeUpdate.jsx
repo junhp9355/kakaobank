@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "../styles/NoticeInsert.scss";
 import "../styles/NoticeWrite.css";
 import "../styles/NoticeUpdate.css";
 import { Link } from "react-router-dom";
@@ -63,7 +62,7 @@ const NoticeInsert = () => {
   };
 
   return (
-    <form className="TodoInsert" onSubmit={onSubmit}>
+    <form className="NoticeInsert" onSubmit={onSubmit}>
       <div classname="Main">
         <div className="NoticeTopLogo">
           <NoticeTopMenu />
@@ -91,9 +90,9 @@ const NoticeInsert = () => {
             onChange={onChangeContents}
           />
         </div>
-        <div>
+        <div className="Updatebuttonfixed">
           <button
-            className="NoticeWriteSave"
+            className="NoticeUpdateSave"
             type="submit"
             onClick={() => {
               alert("저장되었습니다!");
@@ -102,7 +101,7 @@ const NoticeInsert = () => {
             저장
           </button>
           <Link to="/notice">
-            <button className="NoticeWriteList" type="submit">
+            <button className="NoticeUpdateList" type="submit">
               목록
             </button>
           </Link>

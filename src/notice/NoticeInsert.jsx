@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/NoticeInsert.scss";
 import "../styles/NoticeWrite.css";
 import { Link } from "react-router-dom";
 import NoticeBottom from "./NoticeBottom";
@@ -39,8 +38,8 @@ const NoticeInsert = () => {
   };
 
   return (
-    <form className="TodoInsert" onSubmit={onSubmit}>
-      <div classname="Main">
+    <form className="NoticeInsert" onSubmit={onSubmit}>
+      <div classname="InsertMain">
         <div className="NoticeTopLogo">
           <NoticeTopMenu />
         </div>
@@ -68,20 +67,22 @@ const NoticeInsert = () => {
               onChange={onChangeContents}
             />
           </div>
-          <button
-            className="NoticeWriteSave"
-            type="submit"
-            onClick={() => {
-              alert("저장되었습니다!");
-            }}
-          >
-            저장
-          </button>
-          <Link to="/notice">
-            <button className="NoticeWriteList" type="submit">
-              목록
+          <div className="Writebuttonfixed">
+            <button
+              className="NoticeWriteSave"
+              type="submit"
+              onClick={() => {
+                alert("저장되었습니다!");
+              }}
+            >
+              저장
             </button>
-          </Link>
+            <Link to="/notice">
+              <button className="NoticeWriteList" type="submit">
+                목록
+              </button>
+            </Link>
+          </div>
         </div>
 
         <div className="NoticeBottomPosition">
