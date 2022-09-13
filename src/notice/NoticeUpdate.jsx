@@ -63,32 +63,37 @@ const NoticeInsert = () => {
 
   return (
     <form className="NoticeInsert" onSubmit={onSubmit}>
-      <div classname="Main">
+      <div classname="UpdateMain">
         <div className="NoticeTopLogo">
           <NoticeTopMenu />
         </div>
-        <div className="NoticeBody">
-          <div className="NoticeContents">
-            <p>수정하기</p>
+        <div className="NoticeUpdateBody">
+          <div className="UpdateContents">
+            <p className="UpdateTitle">수정하기</p>
             <hr />
           </div>
-          <div>제목</div>
-          <input
-            placeholder={contentItem.title}
-            className="NoticeWriteTitle"
-            type="text"
-            value={title}
-            onChange={onChangeTitle}
-          />
-          <div className="blank"></div>
-          <div>내용</div>
-          <textarea
-            className="NoticeWriteContents"
-            placeholder={contentItem.contents}
-            type="text"
-            value={contents}
-            onChange={onChangeContents}
-          />
+          <section className="UpdateBody">
+            <br />
+            <div className="UpdateText02">제목</div>
+            <input
+              placeholder={contentItem.title}
+              className="NoticeUpdateTitle"
+              type="text"
+              value={title}
+              onChange={onChangeTitle}
+            />
+            <br />
+            <br />
+            <br />
+            <div className="UpdateText01">내용</div>
+            <textarea
+              className="NoticeUpdateContents"
+              placeholder={contentItem.contents}
+              type="text"
+              value={contents}
+              onChange={onChangeContents}
+            />
+          </section>
         </div>
         <div className="Updatebuttonfixed">
           <button

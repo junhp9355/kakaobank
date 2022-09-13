@@ -1,16 +1,20 @@
 .Noticecontainer {
   display: flex;
+  position: relative;
   width: 100vw;
   height: auto;
-  /* background-color: rebeccapurple; */
+  padding-bottom: 200px;
 }
-/* 
-.NoticeMain {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: red;
+
+/* .MNoticeList {
+  overflow-x: hidden;
+  overflow-y: scroll;
 } */
+
+.PageLabel {
+  position: relative;
+  margin-bottom: 10px;
+}
 
 .NoticeBody {
   position: relative;
@@ -69,11 +73,13 @@ tbody > tr > td > a {
   margin-left: 50px;
 }
 
-.NoticeList {
+.MNoticeList {
   width: 1080px;
+  height: 100px;
 }
 
 .NoticeBottomPosition {
-  position: absolute;
-  bottom: 0;
+  height: 200px;
+  width: 100vw;
+  background-color: red;
 }

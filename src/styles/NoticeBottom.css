@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 200px;
   font-family: "NanumL";
   background-color: #eeeeee;
+  margin-top: 400px;
 }
 
 a {

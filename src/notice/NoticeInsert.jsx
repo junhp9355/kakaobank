@@ -67,6 +67,7 @@ const NoticeInsert = () => {
               onChange={onChangeContents}
             />
           </div>
+          <br />
           <div className="Writebuttonfixed">
             <button
               className="NoticeWriteSave"
@@ -84,11 +85,8 @@ const NoticeInsert = () => {
             </Link>
           </div>
         </div>
-
-        <div className="NoticeBottomPosition">
-          <NoticeBottom />
-        </div>
       </div>
+      <NoticeBottom />
     </form>
   );
 };

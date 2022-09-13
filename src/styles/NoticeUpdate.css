@@ -1,38 +1,86 @@
-.Updatebuttonfixed{
-  display: inline-block;
-  width: 1080px;
+.Updatebuttonfixed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
   height: 150px;
-  background-color: red;
+  top: 130px;
+  position: relative;
+  margin: auto;
 }
-
-
 
 .NoticeUpdateSave {
   border: none;
-  background: #eeeeee;
+  background: transparent;
   color: black;
   font-size: 15px;
-  border-radius: 10px;
   outline: 0.2px grey;
   outline-style: solid;
   position: absolute;
-  right: -90%;
-  margin-top: 20px;
   cursor: pointer;
-  padding: 3px 7px;
+  margin-top: 26px;
+  margin-left: -150px;
+  padding: 7px 12px;
+  display: inline-block;
+  font-family: "NanumR";
 }
 
 .NoticeUpdateList {
   border: none;
-  background: #eeeeee;
+  background: transparent;
   color: black;
   font-size: 15px;
-  border-radius: 10px;
   outline: 0.2px grey;
   outline-style: solid;
   position: absolute;
-  right: -91%;
-  margin-top: 20px;
   cursor: pointer;
-  padding: 3px 7px;
+  padding: 7px 12px;
+  margin-top: -4px;
+  display: inline-block;
+  font-family: "NanumR";
 }
+
+.NoticeUpdateTitle {
+  width: 800px;
+  margin-left: 130px;
+}
+
+.NoticeUpdateContents {
+  width: 800px;
+  height: 400px;
+  margin-left: 130px;
+}
+
+.UpdateText01 {
+  width: 100px;
+  height: auto;
+  margin-left: 130px;
+  font-size: 20px;
+  font-family: "NanumEB";
+}
+.UpdateText02 {
+  width: 100px;
+  height: auto;
+  margin-left: 130px;
+  font-size: 20px;
+  font-family: "NanumEB";
+}
+
+.NoticeUpdateBody {
+  position: relative;
+  top: 50px;
+  width: 1080px;
+  height: 500px;
+  margin: auto;
+  font-family: "NanumM";
+}
+
+.UpdateTitle {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "NanumEB";
+}
+
+/* .UpdateBody {
+  display: flex;
+} */

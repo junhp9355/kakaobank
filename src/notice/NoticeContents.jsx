@@ -7,8 +7,9 @@ import "../styles/NoticeContents.css";
 import "../styles/Bottom.css";
 import NoticeTopMenu from "./NoticeTopMenu";
 import NoticeBottom from "./NoticeBottom";
+import Date from "./Date";
 
-const NoticeContents = ({ props }) => {
+const NoticeContents = () => {
   const [contentItem, setContentItem] = useState([]);
   const [selectNotice, setSelectNotice] = useState(null);
   const [insertToggle, setInsertToggle] = useState(false);
@@ -36,47 +37,55 @@ const NoticeContents = ({ props }) => {
     setContentItem(data.data);
   };
 
+  const Datedate = (contentItem.reg_date || "").split("T");
+
   return (
-    <section className="container">
-      <div classname="Main">
-        <div className="NoticeTopLogo">
-          <NoticeTopMenu />
+    <body className="CotentSystembody">
+      <section className="Contentscontainer">
+        <div classname="ContentsMain">
+          <div className="NoticeTopLogo">
+            <NoticeTopMenu />
+          </div>
+          <div className="ContentsMainBody">
+            <p className="ContentsTitle">공지사항</p>
+            <hr />
+            <div className="contentBody">
+              <br />
+              <div className="contentTitleFixed">
+                <div className="contentTitle">{contentItem.title}</div>
+                <div className="contentDate">{Datedate[0]}</div>
+              </div>
+              <div className="contentTextFixed">
+                <pre className="contentText">{contentItem.contents}</pre>
+              </div>
+              <br />
+            </div>
+          </div>
+          <div className="contentButton">
+            <Link to={`/notice/${id}/edit`}>
+              <button className="contentedit">수정</button>
+            </Link>
+            <Link to="/notice">
+              <button
+                className="contentremove"
+                onClick={() => {
+                  onRemove(contentItem.id);
+                  // alert("삭제되었습니다!");
+                }}
+              >
+                삭제
+              </button>
+            </Link>
+            <Link to="/notice">
+              <button className="contentListbutton" type="submit">
+                목록
+              </button>
+            </Link>
+          </div>
         </div>
-        <div className="contentBody">
-          <br />
-          <div className="contentTitle">{contentItem.title}</div>
-          <br />
-          <pre className="contentText">{contentItem.contents}</pre>
-          <br />
-        </div>
-        <div className="contentButton">
-          <Link to={`/notice/${id}/edit`}>
-            <button className="contentedit">수정</button>
-          </Link>
-          <Link to="/notice">
-            <button
-              className="contentremove"
-              onClick={() => {
-                onRemove(contentItem.id);
-                // alert("삭제되었습니다!");
-              }}
-            >
-              삭제
-            </button>
-          </Link>
-          <Link to="/notice">
-            <button className="contentListbutton" type="submit">
-              목록
-            </button>
-          </Link>
-        </div>
-        <br />
-        <br />
-        <div className="NoticeBottomPosition">
-          <NoticeBottom />
-        </div>
-      </div>
-    </section>
+      </section>
+      <NoticeBottom />
+    </body>
   );
 };
 export default NoticeContents;

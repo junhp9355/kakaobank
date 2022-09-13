@@ -13,11 +13,10 @@ const NoticeList = ({
   setSelectNotice,
   changeSelectNotice,
   setNotice,
+  page,
+  limit,
+  setPage,
 }) => {
-  // const { reg_date } = notice;
-  const [posts, setPosts] = useState([]);
-  const [limit, setLimit] = useState(10);
-  const [page, setPage] = useState(1);
   const offset = (page - 1) * limit;
   return (
     <ul className="NoticeList">
@@ -25,18 +24,20 @@ const NoticeList = ({
         <tbody className="List">
           <tr>
             {notice.slice(offset, offset + limit).map((item, index) => (
-              <Link
-                to={`/notice/${item.id}`}
-                style={{ textDecoration: "none", cursor: "default" }}
-              >
+              <section className="NoticeListItemFixed">
                 <td className="NoticeID">{item.id}</td>
                 <td className="NoticeTitle">
-                  <a href="#!">{item.title}</a>
+                  <Link
+                    to={`/notice/${item.id}`}
+                    style={{ textDecoration: "none", cursor: "default" }}
+                  >
+                    <a href="#!">{item.title}</a>
+                  </Link>
                 </td>
                 <td className="NoticeDate">
                   <Date item={item} />
                 </td>
-              </Link>
+              </section>
             ))}
           </tr>
         </tbody>
@@ -55,20 +56,6 @@ const NoticeList = ({
             글쓰기
           </button>
         </Link>
-        {/* <label>
-          페이지 당 표시할 게시물 수:&nbsp;
-          <select
-            type="number"
-            value={limit}
-            onChange={({ target: { value } }) => setLimit(Number(value))}
-          >
-            <option value="10">10</option>
-            <option value="12">12</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </label> */}
       </div>
     </ul>
   );

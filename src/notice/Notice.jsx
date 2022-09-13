@@ -16,6 +16,9 @@ const Notice = () => {
   const [insertToggle, setInsertToggle] = useState(false);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [posts, setPosts] = useState([]);
+  const [limit, setLimit] = useState(10);
+  const [page, setPage] = useState(1);
 
   const onToggle = async (id) => {
     try {
@@ -58,45 +61,65 @@ const Notice = () => {
   }
 
   return (
-    <section className="Noticecontainer">
-      <div classname="NoticeMain">
-        <div className="NoticeTopLogo">
-          <NoticeTopMenu />
-        </div>
-        <div className="NoticeBody">
-          <div className="NoticeContents">
-            <p>공지사항</p>
-            <hr />
-            <br />
-            <div className="NoticeSubTitle">
-              <tr>
-                <th className="trth01">No</th>
-                <th className="trth02">제목</th>
-                <th className="trth03">등록일</th>
-              </tr>
-            </div>
+    <body>
+      <section className="Noticecontainer">
+        <div classname="NoticeMain">
+          <div className="NoticeTopLogo">
+            <NoticeTopMenu />
           </div>
-          <div className="NoticeList">
-            <NoticeList
-              notice={notice}
-              onToggle={onToggle}
-              onInsertToggle={onInsertToggle}
-              setSelectNotice={setSelectNotice}
-            />
-            {/* {insertToggle && (
+          <div className="NoticeBody">
+            <div className="NoticeContents">
+              <p>공지사항</p>
+              <hr />
+              <br />
+              {/* <div className="PageLabel">
+                페이지 당 표시할 게시물 수:&nbsp;
+                <select
+                  type="number"
+                  value={limit}
+                  onChange={({ target: { value } }) => setLimit(Number(value))}
+                >
+                  <option value="10">10</option>
+                  <option value="12">12</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div> */}
+              <div className="NoticeSubTitle">
+                <tr>
+                  <th className="trth01">No</th>
+                  <th className="trth02">제목</th>
+                  <th className="trth03">등록일</th>
+                </tr>
+              </div>
+            </div>
+            <div className="MNoticeList">
+              <NoticeList
+                notice={notice}
+                onToggle={onToggle}
+                onInsertToggle={onInsertToggle}
+                setSelectNotice={setSelectNotice}
+                posts={posts}
+                setPosts={setPosts}
+                limit={limit}
+                setLimit={setLimit}
+                page={page}
+                setPage={setPage}
+              />
+              {/* {insertToggle && (
               <NoticeEdit
                 onInsertToggle={onInsertToggle}
                 selectNotice={selectNotice}
                 onUpdate={onUpdate}
               />
             )} */}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="NoticeBottomPosition">
-        <NoticeBottom />
-      </div>
-    </section>
+      </section>
+      <NoticeBottom />
+    </body>
   );
 };
 
