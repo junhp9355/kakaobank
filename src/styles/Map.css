@@ -1,0 +1,63 @@
+.MapMain {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.MapFixed {
+  position: relative;
+  width: 1080px;
+  height: 1600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.MapBody {
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  height: 1000px;
+  justify-content: center;
+  margin: auto;
+}
+
+.MapTitle {
+  font-family: "nanumB";
+  font-size: 40px;
+}
+
+.MapText {
+  font-family: "nanumL";
+  font-size: 16px;
+}
+
+.MapText > p {
+  font-size: 22px;
+  font-family: "nanumEB";
+}
+
+.MapSubText01 {
+  display: flex;
+  height: 30px;
+}
+
+.MapSubText01 > p {
+  height: 10px;
+}
+.MapSubText01 > p:nth-child(1) {
+  font-weight: bold;
+}
+
+.MapSubText02 {
+  display: flex;
+}
+.MapSubText02 > p:nth-child(1) {
+  font-weight: bold;
+}
+
+.Mapspace {
+  width: 30px;
+}

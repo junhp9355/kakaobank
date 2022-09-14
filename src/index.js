@@ -7,6 +7,7 @@ import NoticeInsert from "./notice/NoticeInsert";
 import NoticeUpdate from "./notice/NoticeUpdate";
 import NoticeContents from "./notice/NoticeContents";
 import reportWebVitals from "./reportWebVitals";
+import Map from "./map/Map";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,6 +19,7 @@ root.render(
       <Route path="/notice/Write" element={<NoticeInsert />} />
       <Route path="/notice/:id" element={<NoticeContents />} />
       <Route path="/notice/:id/edit" element={<NoticeUpdate />} />
+      <Route path="/map" element={<Map />} />
     </Routes>
   </BrowserRouter>
 );

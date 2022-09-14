@@ -14,6 +14,7 @@ import Bottom from "./components/Bottom";
 import TopLogo from "./components/TopLogo";
 import "../src/styles/TopSubMenu.css";
 import { useLocation } from "react-router-dom";
+import Chat from "./chatting/Chat";
 
 let prePath = "";
 
@@ -66,6 +67,7 @@ const App = () => {
         <div>
           <Bottom classname="BottomMain" />
         </div>
+        <Chat />
       </div>
     </section>
   );

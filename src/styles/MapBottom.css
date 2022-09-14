@@ -1,0 +1,145 @@
+.MapBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  font-family: "NanumL";
+  background-color: #eeeeee;
+  /* margin-top: 400px; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.BottomLink {
+  float: left;
+  font-size: 12px;
+  /* margin: auto; */
+  width: 1080px;
+  /* height: 85px; */
+}
+.BottomLink01 {
+  width: 1080px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  padding: 20px 0 16px 0;
+}
+
+.BottomLink01 a {
+  line-height: 25px;
+}
+
+.Bottomtext {
+  font-size: 12px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.Bottomtext02 {
+  font-size: 12px;
+  height: 20px;
+  margin-bottom: -20px;
+}
+
+.Bottomtext02 P {
+  position: relative;
+  top: -70%;
+}
+
+.Bottomtext p {
+  display: inline-block;
+}
+
+.Bottomtext > p:nth-child(2) {
+  margin-left: 10px;
+  font-weight: 500;
+  font-family: "NanumB";
+}
+.Bottomtext > p:nth-child(3) {
+  margin-left: 10px;
+}
+
+.bold {
+  font-family: "NanumB";
+  font-weight: 600;
+}
+.bar {
+  margin: 0 13px 0 13px;
+  width: 1px;
+  height: 8px;
+  background-color: #c2c2c2;
+  display: inline-block;
+}
+
+.bottomimgmain {
+  position: absolute;
+  margin-top: 5px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomimg {
+  width: 48px;
+  height: 32px;
+}
+.BottomIcon {
+  position: absolute;
+  display: flex;
+  width: 500px;
+  height: 24px;
+  right: -34%;
+}
+
+.BottomIcons {
+  margin-left: 10px;
+}
+
+.BottomIcon > a:nth-child(3) {
+  margin-left: 15px;
+}
+
+.BottomFacebookicon {
+  background-image: url(/public/img/ico_sns.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 0px -90px;
+  width: 24px;
+  height: 24px;
+}
+
+.BottomInstagramicon {
+  background-image: url(/public/img/ico_sns.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: -191px -138px;
+  width: 24px;
+  height: 24px;
+}
+
+.BottomYoutubeicon {
+  background-image: url(/public/img/ico_sns.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: -90px -90px;
+  width: 24px;
+  height: 24px;
+}
+
+.BottomBrunchicon {
+  background-image: url(/public/img/ico_sns.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: -217px -138px;
+  width: 24px;
+  height: 24px;
+}

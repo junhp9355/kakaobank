@@ -22,9 +22,11 @@ const SecondMenu01 = () => {
           </a>
         </li>
         <li>
-          <a href="#!" className="second-sub-title">
-            오시는 길
-          </a>
+          <Link to="/map">
+            <a href="#!" className="second-sub-title">
+              오시는 길
+            </a>
+          </Link>
         </li>
         <li>
           <a href="#!" className="second-sub-title">
