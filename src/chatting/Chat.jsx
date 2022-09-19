@@ -1,56 +1,38 @@
-import React, { useEffect, useState } from "react";
-import io from "socket.io-client";
+import React, { useState } from "react";
+import Chatbot from "react-chatbot-kit";
 import "../chatting/Chat.css";
+import config from "./config";
+import MessageParser from "./MessageParser";
+import ActionProvider from "./ActionProvider";
 
-const socket = io.connect("http://localhost:5000");
+const Chat = () => {
+  const [showPopup, setShowPopup] = useState(false);
 
-function Chat() {
-  const [chat, setChat] = useState([]);
-  const [message, setMessage] = useState("");
-
-  const sendMessageHandler = () => {
-    socket.emit("message", message);
-    setMessage("");
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
   };
-
-  useEffect(() => {
-    socket.on("message", (message) => {
-      setChat([...chat, message]);
-    });
-  }, [chat]);
-
   return (
-    <div className="Chat">
-      <div>
-        <h1>
-          Messages
-          <hr />
-        </h1>
-        <div className="MessagesBox">
-          <ul className="MessagesArea">
-            {chat.map((data, idx) => {
-              return (
-                <li className="MessagesText" key={idx}>
-                  {data}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
-      <br />
-      <div className="ChatBox">
-        <input
-          className="ChatInput"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button className="SandButton" onClick={sendMessageHandler}>
-          보내기
+    <section>
+      <div className="App">
+        <button className="open" onClick={togglePopup} value="false">
+          채팅 상담
         </button>
+        {showPopup ? (
+          <div>
+            <div>
+              <Chatbot
+                config={config}
+                messageParser={MessageParser}
+                actionProvider={ActionProvider}
+                headerText="카카오뱅크 고객센터"
+                placeholderText="메시지를 입력하세요."
+              />
+            </div>
+          </div>
+        ) : null}
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Chat;

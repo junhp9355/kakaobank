@@ -8,6 +8,7 @@ import "../styles/Bottom.css";
 import NoticeTopMenu from "./NoticeTopMenu";
 import NoticeBottom from "./NoticeBottom";
 import Date from "./Date";
+import parse from "html-react-parser";
 
 const NoticeContents = () => {
   const [contentItem, setContentItem] = useState([]);
@@ -38,6 +39,7 @@ const NoticeContents = () => {
   };
 
   const Datedate = (contentItem.reg_date || "").split("T");
+  const contentText = `<pre>${contentItem.contents}</pre>`;
 
   return (
     <body className="CotentSystembody">
@@ -56,7 +58,7 @@ const NoticeContents = () => {
                 <div className="contentDate">{Datedate[0]}</div>
               </div>
               <div className="contentTextFixed">
-                <pre className="contentText">{contentItem.contents}</pre>
+                <pre className="contentText">{parse(contentText)}</pre>
               </div>
               <br />
             </div>

@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import NoticeBottom from "./NoticeBottom";
 import NoticeTopMenu from "../notice/NoticeTopMenu";
 import axios from "axios";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import "../styles/Editor.css";
+import Editor from "./Editor";
 
 const NoticeInsert = () => {
   const [notice, setNotice] = useState([]);
@@ -54,18 +58,32 @@ const NoticeInsert = () => {
               placeholder="제목을 입력하세요"
               className="NoticeWriteTitle"
               type="text"
-              value={title}
+              // value={title}
               onChange={onChangeTitle}
             />
             <div className="blank"></div>
             <div className="InsertText">내용</div>
-            <textarea
-              className="NoticeWriteContents"
-              placeholder="내용을 입력하세요"
-              type="text"
-              value={contents}
-              onChange={onChangeContents}
-            />
+            <div className="NoticeWriteContents">
+              <CKEditor
+                className="CKEditor"
+                editor={ClassicEditor}
+                config={{ placeholder: "내용을 입력하세요" }}
+                onReady={(editor) => {
+                  console.log("Editor is ready to use!", editor);
+                }}
+                onChange={(event, editor) => {
+                  const data = editor.getData();
+                  console.log({ event, editor, data });
+                  setContents(data);
+                }}
+                onBlur={(event, editor) => {
+                  console.log("Blur.", editor);
+                }}
+                onFocus={(event, editor) => {
+                  console.log("Focus.", editor);
+                }}
+              />
+            </div>
           </div>
           <br />
           <div className="Writebuttonfixed">

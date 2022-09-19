@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 import NoticeBottom from "./NoticeBottom";
 import NoticeTopMenu from "../notice/NoticeTopMenu";
 import axios from "axios";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import "../styles/Editor.css";
 
-const NoticeInsert = () => {
+const NoticeUpdate = () => {
   const [contentItem, setContentItem] = useState([]);
   const [selectNotice, setSelectNotice] = useState(null);
   const [insertToggle, setInsertToggle] = useState(false);
@@ -76,7 +79,7 @@ const NoticeInsert = () => {
             <br />
             <div className="UpdateText02">제목</div>
             <input
-              placeholder={contentItem.title}
+              placeholder="수정 제목을 입력하세요"
               className="NoticeUpdateTitle"
               type="text"
               value={title}
@@ -86,13 +89,27 @@ const NoticeInsert = () => {
             <br />
             <br />
             <div className="UpdateText01">내용</div>
-            <textarea
-              className="NoticeUpdateContents"
-              placeholder={contentItem.contents}
-              type="text"
-              value={contents}
-              onChange={onChangeContents}
-            />
+            <div className="NoticeUpdateContents">
+              <CKEditor
+                className="CKEditor"
+                editor={ClassicEditor}
+                config={{ placeholder: "내용을 입력하세요" }}
+                onReady={(editor) => {
+                  console.log("Editor is ready to use!", editor);
+                }}
+                onChange={(event, editor) => {
+                  const data = editor.getData();
+                  console.log({ event, editor, data });
+                  setContents(data);
+                }}
+                onBlur={(event, editor) => {
+                  console.log("Blur.", editor);
+                }}
+                onFocus={(event, editor) => {
+                  console.log("Focus.", editor);
+                }}
+              />
+            </div>
           </section>
         </div>
         <div className="Updatebuttonfixed">
@@ -119,4 +136,4 @@ const NoticeInsert = () => {
   );
 };
 
-export default NoticeInsert;
+export default NoticeUpdate;

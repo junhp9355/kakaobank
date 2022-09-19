@@ -29,6 +29,9 @@ const App = () => {
 
   return (
     <section className="container">
+      <div className="chatbotfixed">
+        <Chat />
+      </div>
       <div classname="Main">
         <div>
           <TopLogo className="TopLogoMenu" />
@@ -67,7 +70,6 @@ const App = () => {
         <div>
           <Bottom classname="BottomMain" />
         </div>
-        <Chat />
       </div>
     </section>
   );
